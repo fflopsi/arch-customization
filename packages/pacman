@@ -1,0 +1,12 @@
+# Packages to be installed via pacman
+
+zsh
+zsh-syntax-highlighting
+ttf-terminus-nerd
+thefuck
+tldr
+rclone
+keepass
+
+# For laptop, uncomment below
+#iio-sensor-proxy

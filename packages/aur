@@ -1,0 +1,8 @@
+# Packages to be installed from the AUR
+
+zsh-theme-powerlevel10k-git
+adw-gtk3
+gnome-browser-connector
+
+# For btrfs, uncomment below
+#os-prober-btrfs
