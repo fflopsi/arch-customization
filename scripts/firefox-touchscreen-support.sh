@@ -1,4 +1,4 @@
-#/bin/env zsh
+#!/bin/env zsh
 
 # Add a necessary line to a file to enable full touchscreen support (scrolling, zooming) to Firefox
 # Execute with root rights
