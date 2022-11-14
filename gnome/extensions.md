@@ -15,6 +15,7 @@
 ## Additional
 
 - [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/)
+- [Applications Menu](https://extensions.gnome.org/extension/6/applications-menu/)
 - [Bring Out Submenu Of Power Off/Logout Button](https://extensions.gnome.org/extension/2917/bring-out-submenu-of-power-offlogout-button/)
 - [Material Shell](https://extensions.gnome.org/extension/3357/material-shell/)
 - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
