@@ -1,0 +1,10 @@
+# Printing
+
+Printing seems to be a complicated issue with my Canon G7050 and Linux, so here are some instructions how I got it working:
+
+1. Install the following packages:
+    1. Through pacman and the official repositories: [These packages](https://github.com/endeavouros-team/EndeavourOS-packages-lists/blob/master/printing). If you installes EndeavourOS and ticked the box to install printing packages, these should already be installed.
+    2. Through the AUR (and a helper like [yay](https://github.com/Jguer/yay)): `cnijfilter2`
+2. Start (and enable) `cups.service` (or `cups.socket`), if it is not already running.
+3. Go [here](http://localhost:631/admin) and click *Add Printer*. Make sure to add the printer annotated with *(driverless)*, as it worked best for me.
+4. Now, printing should be ready. If it does not work, check if any error messages appear [here](http://localhost:631/printers/). If CUPS is *Unable to locate printer "..."*, use the solution provided [here](https://wiki.archlinux.org/title/CUPS/Troubleshooting#Unable_to_locate_printer).
