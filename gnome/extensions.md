@@ -7,6 +7,7 @@
 - [Gnome 4x UI Improvements](https://extensions.gnome.org/extension/4158/gnome-40-ui-improvements/)
 - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
 - [Hide Activities Button](https://extensions.gnome.org/extension/744/hide-activities-button/)
+- [Quick Settings Tweaker](https://extensions.gnome.org/extension/5446/quick-settings-tweaker/)
 
 ## Additional
 
