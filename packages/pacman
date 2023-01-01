@@ -9,6 +9,7 @@ tldr
 rclone
 keepass
 gnome-menus
+grub-customizer
 
 # For laptop, uncomment below
 #iio-sensor-proxy
