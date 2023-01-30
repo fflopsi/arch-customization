@@ -1,9 +1,9 @@
-#!/bin/env zsh
+#!/usr/bin/env bash
 
 # Script to import the background URIs from the .conf file
 
 # Before running this script:
-# Make sure to click "Download more EndeavourOS wallpapers" in EOS Welcome (tab "After Install") to download the images
+# Make sure to click "Download more EndeavourOS wallpapers" in EOS Welcome to download the images
 
 dconf load / < background.conf
 

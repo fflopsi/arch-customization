@@ -1,4 +1,4 @@
-#!/bin/env zsh
+#!/usr/bin/env bash
 
 # Script to import the custom shortcuts from the .conf file
 

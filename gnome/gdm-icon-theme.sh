@@ -1,4 +1,4 @@
-#!/bin/env zsh
+#!/usr/bin/env bash
 
 # Script to apply the "Papirus" icon theme to the gnome login screen gdm
 # Change "Papirus" to something else to apply another icon theme
