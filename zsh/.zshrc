@@ -96,8 +96,8 @@ alias grep='grep --color=auto'
 alias ip='ip -color=auto'
 
 # rclone
-alias gdrive='rclone --vfs-cache-mode writes mount googledrive: /home/flopsi/GoogleDrive'
-alias odrive='rclone --vfs-cache-mode writes mount onedrive: /home/flopsi/OneDrive'
+alias gdrive="rclone --vfs-cache-mode writes mount googledrive: $HOME/GoogleDrive"
+alias odrive="rclone --vfs-cache-mode writes mount onedrive: $HOME/OneDrive"
 
 # thefuck
 eval $(thefuck --alias)
