@@ -1,15 +1,1 @@
-# Packages to be installed via pacman
-
-zsh
-zsh-syntax-highlighting
-ttf-terminus-nerd
-btop
-thefuck
-tldr
-rclone
-keepass
-gnome-menus
-papirus-icon-theme
-
-# For laptop, uncomment below
-#iio-sensor-proxy
+zsh zsh-syntax-highlighting ttf-terminus-nerd btop thefuck tldr rclone keepass gnome-menus papirus-icon-theme
