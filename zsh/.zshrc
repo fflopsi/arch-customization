@@ -85,6 +85,8 @@ zle -N down-line-or-beginning-search
 
 # Aliases and functions
 # Some tweaks
+alias ll='ls -l'
+alias la='ls -lA'
 alias gedit=gnome-text-editor
 alias console=kgx
 function mkdircd () mkdir -p $1 && cd $1
