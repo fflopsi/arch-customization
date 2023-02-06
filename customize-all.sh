@@ -3,7 +3,6 @@
 # Run this script to apply all customizations in this repository
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-
 cd $SCRIPT_DIR
 
 read -n 1 -p 'Install packages from the official repositories? Y/n: ' PACMAN
@@ -13,7 +12,6 @@ if [[ $PACMAN =~ ^(|y|Y)$ ]]; then
 else
     printf '\nSkipping.\n'
 fi
-
 read -n 1 -p 'Install packages from the AUR? Y/n: ' AUR
 if [[ $AUR =~ ^(|y|Y)$ ]]; then
     printf '\nInstalling from packages/aur...\n\n'
@@ -21,7 +19,6 @@ if [[ $AUR =~ ^(|y|Y)$ ]]; then
 else
     printf '\nSkipping.\n'
 fi
-
 read -n 1 -p 'Install packages for laptops? y/N: ' LAPTOP
 if [[ $LAPTOP =~ ^(y|Y)$ ]]; then
     printf '\nInstalling from packages/laptop...\n\n'
@@ -61,6 +58,8 @@ else
     printf '\nSkipping.\n'
 fi
 
+./extensions.sh
+
 cd $SCRIPT_DIR
 
 read -n 1 -p 'Configure rclone now? Y/n: ' RCC
@@ -79,5 +78,3 @@ if [[ $FIREFOX_TOUCH =~ ^(|y|Y)$ ]]; then
 else
     printf '\nSkipping.\n'
 fi
-
-gnome/extensions.sh
