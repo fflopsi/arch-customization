@@ -4,7 +4,7 @@
 
 printf '\nSetting monospace font to "TerminessTTF Nerd Font Mono Bold 13"...\n'
 yay -Syu --needed ttf-terminus-nerd
-gsettings set org.gnome.desktop.interface monospace-font-name "TerminessTTF Nerd Font Mono Bold 13"
+gsettings set org.gnome.desktop.interface monospace-font-name "TerminessTTF Nerd Font Mono Medium 13"
 
 printf '\nSetting icon theme to "Papirus"...\n'
 yay -Syu --needed papirus-icon-theme
