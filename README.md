@@ -5,7 +5,7 @@ Some files to customize an Arch Linux / EndeavourOS installation to my liking
 ## Usage
 
 To apply all customizations, just run the script `customize-all.sh` located in the root directory of this repository.
-Most of the customizations can be accepted or denied with this script.
+Most of the customizations can be accepted or denied when running this script.
 
 To only apply certain customizations, you can also run single scripts located in the different sub-directories.
 
