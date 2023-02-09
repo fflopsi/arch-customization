@@ -1,6 +1,8 @@
 # Arch Customization by fflopsi
 
-Some files to customize an Arch Linux / EndeavourOS installation to my liking
+Some files to customize an EndeavourOS (Arch Linux) installation to my liking
+
+*To use this on Arch Linux, you may need to install some packages, like gnome, yay and firefox.*
 
 ## Usage
 
