@@ -31,6 +31,30 @@ fi
 printf '\nApplying custom shortcuts...\n'
 ./custom-shortcuts.sh
 
+read -n 1 -p 'Do you want to apply the mouse and touchpad settings? Y/n: ' MOUSE
+if [[ $MOUSE =~ ^(|y|Y)$ ]]; then
+    printf '\nApplying mouse and touchpad settings...\n'
+    ./mouse-touchpad-settings.sh
+else
+    printf '\nSkipping.\n'
+fi
+
+read -n 1 -p 'Do you want to apply the multitasking settings? Y/n: ' MULTITASKING
+if [[ $MULTITASKING =~ ^(|y|Y)$ ]]; then
+    printf '\nApplying multitasking settings...\n'
+    ./multitasking-settings.sh
+else
+    printf '\nSkipping.\n'
+fi
+
+read -n 1 -p 'Do you want to apply the top bar settings? Y/n: ' TOPBAR
+if [[ $TOPBAR =~ ^(|y|Y)$ ]]; then
+    printf '\nApplying top bar settings...\n'
+    ./topbar-settings.sh
+else
+    printf '\nSkipping.\n'
+fi
+
 read -n 1 -p 'Apply current monitor layout to gdm login screen? y/N: ' MONITOR
 if [[ $MONITOR =~ ^(y|Y)$ ]]; then
     printf '\nCopying monitor layout...\n'
@@ -58,6 +82,14 @@ read -n 1 -p 'Do you want to enable touchscreen support for Firefox? Y/n: ' FIRE
 if [[ $FIREFOX_TOUCH =~ ^(|y|Y)$ ]]; then
     printf '\nEnabling Firefox touchscreen support...\n'
     ./firefox-touchscreen-support.sh
+else
+    printf '\nSkipping.\n'
+fi
+
+read -n 1 -p 'Do you want to enable bluetooth support? Y/n: ' BLUETOOTH
+if [[ $BLUETOOTH =~ ^(|y|Y)$ ]]; then
+    printf '\nEnabling bluetooth support...\n'
+    ./bluetooth.sh
 else
     printf '\nSkipping.\n'
 fi
