@@ -5,8 +5,10 @@
 printf '\nCreating directories GoogleDrive and OneDrive in $HOME...\n'
 mkdir $HOME/GoogleDrive
 mkdir $HOME/OneDrive
+
 printf '\nOpening rclone configurator (create two new remotes, named "googledrive" and "onedrive")...\n\n'
 rclone config
+
 printf '\nCreating systemd units...\n'
 mkdir -p $HOME/.config/systemd/user
 cat > $HOME/.config/systemd/user/googledrive.service <<- EOM
@@ -17,7 +19,7 @@ Description=Google Drive mount via rclone
 ExecStart=/usr/bin/rclone --vfs-cache-mode writes mount googledrive: $HOME/GoogleDrive
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 EOM
 cat > $HOME/.config/systemd/user/onedrive.service <<- EOM
 [Unit]
@@ -27,5 +29,9 @@ Description=OneDrive mount via rclone
 ExecStart=/usr/bin/rclone --vfs-cache-mode writes mount onedrive: $HOME/OneDrive
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 EOM
+
+printf '\nEabling and starting systemd units...\n'
+systemctl --user enable --now googledrive.service
+systemctl --user enable --now onedrive.service
