@@ -44,8 +44,8 @@ fi
 cd $SCRIPT_DIR/zsh
 
 printf '\nCopying .zshrc and .zshenv...\n'
-cp zsh/.zshrc $HOME
-cp zsh/.zshenv $HOME
+cp .zshrc $HOME
+cp .zshenv $HOME
 
 cd $SCRIPT_DIR/other
 
