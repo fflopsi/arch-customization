@@ -54,6 +54,17 @@ All these customizations are applied when running the script `customize-all.sh` 
   - <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Esc</kbd> launches btop in Gnome Console
   - <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>K</kbd> launches KeePass
   - <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>^</kbd> (the key left to the backspace key on Swiss keyboards) executes the aforementioned script to change between themes
+- Apply some mouse and touchpad settings
+  - Flat mouse acceleration profile
+  - Enable tap to click on touchpad
+- Apply some multitasking settings
+  - Disable hot corner
+  - Enable workspaces on all displays
+  - Set app switcher to current workspace only
+- Apply some top bar settings
+  - Show weekday before date
+  - Show seconds in clock
+  - Show week number in calendar widget
 - Copy the display settings to the gdm login screen
 - Install some Gnome extensions
   - "Essential" extensions
@@ -79,3 +90,4 @@ All these customizations are applied when running the script `customize-all.sh` 
 
 - Setup and configure rclone for Google Drive and OneDrive
 - Enable touchscreen gestures in Firefox
+- Enable bluetooth services
