@@ -33,6 +33,16 @@ All these customizations are applied when running the script `customize-all.sh` 
   - `gnome-browser-connector`
 - Install additional packages for laptops
   - `iio-sensor-proxy`
+- Install IDE's
+  - `pycharm-community-edition`
+  - `intellij-idea-community-edition`
+  - `android-studio`
+- Install `flatpak` and flatpak packages
+  - Uninstall `firefox`
+  - `com.github.tchx84.Flatseal`
+  - `org.mozilla.firefox`
+  - `org.gnome.World.Secrets`
+  - `com.mattjakeman.ExtensionManager`
 
 ### Folder `gnome`
 
