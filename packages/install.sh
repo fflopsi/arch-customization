@@ -23,3 +23,21 @@ if [[ $LAPTOP =~ ^(y|Y)$ ]]; then
 else
     printf '\nSkipping.\n'
 fi
+
+read -n 1 -p "Install IDE's? Y/n: " IDE
+if [[ $IDE =~ ^(|y|Y)$ ]]; then
+    printf "\nInstalling IDE's...\n\n"
+    yay -Syu --needed - < ides
+else
+    printf '\nSkipping.\n'
+fi
+
+read -n 1 -p 'Install flatpak and flatpak packages? Y/n: ' FLATPAKS
+if [[ $FLATPAKS =~ ^(|y|Y)$ ]]; then
+    printf '\nInstalling flatpaks...\n\n'
+    sudo pacman -Syu flatpak
+    sudo pacman -Rns firefox
+    flatpak install flathub com.github.tchx84.Flatseal org.mozilla.firefox org.gnome.World.Secrets com.mattjakeman.ExtensionManager
+else
+    printf '\nSkipping.\n'
+fi
