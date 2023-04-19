@@ -25,7 +25,6 @@ All these customizations are applied when running the script `customize-all.sh` 
   - `thefuck`
   - `tldr`
   - `rclone`
-  - `keepass`
   - `gnome-menus`
   - `papirus-icon-theme`
 - Install packages from the AUR
