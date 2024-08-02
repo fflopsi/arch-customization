@@ -1,3 +1,8 @@
+*Archived in favor of NixOS, find my config [here](https://github.com/fflopsi/nixos-config).*
+
+---
+---
+
 # Arch Customization by fflopsi
 
 Some files to customize an EndeavourOS (Arch Linux) installation to my liking
